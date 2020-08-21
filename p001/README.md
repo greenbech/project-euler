@@ -10,8 +10,16 @@ Find the sum of all the multiples of 3 or 5 below 1000.
 
 ## Solution
 
-As the first task, this is probably the easiest one. The most natural solution is to iterate through the natural numbers up to 999 and sum all that are divisible by 3 or 5. 
+As the first task on the site, this is probably the easiest. A straight forward solution is to
+
+- initialize a variable `total` to 0
+- iterate through the numbers from 1 to 999 with a for loop
+- add the numbers that are divisible by 3 *or* divisible by 5 to `total`
 
 An other solution is to sum all the multiples of 3 and the multiples of 5, but then you will need to remove the multiples of 15 since those would be counted twice.
 
-In both cases, this is mostly a matter of knowing the syntax of a for loop (or list comprehension in a language such as Python) and the `mod` operator.
+In a language such as Python you can solve this problem on one line with the built in function `sum` and the use of list comprehension:
+
+```python
+sum((i for i in range(1000) if i % 3 == 0 or i % 5 == 0))
+```
