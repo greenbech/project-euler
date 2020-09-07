@@ -1,4 +1,4 @@
-# _Benchmark for Project Euler problem 1_
+## Benchmark fo
 
 | Programming language | File                                             | Duration (ms) |
 | :------------------- | :----------------------------------------------- | ------------: |

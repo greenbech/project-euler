@@ -15,7 +15,7 @@ As the first task on the site, this is probably the easiest. A straight forward 
 
 - initialize a variable `total` to 0
 - iterate through the numbers from 1 to 999 with a for loop
-- add the numbers that are divisible by 3 *or* divisible by 5 to `total`
+- add the numbers that are divisible by 3 _or_ divisible by 5 to `total`
 
 An other solution is to sum all the multiples of 3 and the multiples of 5, but then you will need to remove the multiples of 15 since those would be counted twice.
 
@@ -24,3 +24,13 @@ In a language such as Python you can solve this problem on one line with the bui
 ```python
 sum((i for i in range(1000) if i % 3 == 0 or i % 5 == 0))
 ```
+
+## Benchmark
+
+| Programming language | File                                             | Duration (ms) |
+| :------------------- | :----------------------------------------------- | ------------: |
+| Python               | [p001_for_loop.py](./p001_for_loop.py)           |            38 |
+| Python               | [p001_comprehension.py](./p001_comprehension.py) |            46 |
+| Julia                | [p001_comprehension.jl](./p001_comprehension.jl) |           353 |
+| MATLAB/GNU Octave    | [p001.m](./p001.m)                               |           456 |
+| Julia                | [p001_for_loop.jl](./p001_for_loop.jl)           |           496 |

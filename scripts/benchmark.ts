@@ -46,6 +46,6 @@ markdown
 
 
 // Display markdown to stdout
-console.log(`# _Benchmark for Project Euler problem ${parseInt(directory.slice(1))}_`)
+console.log(`## Benchmark`)
 console.log()
 console.log(markdown.content);
