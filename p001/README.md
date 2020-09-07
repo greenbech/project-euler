@@ -18,7 +18,7 @@ As the first task on the site, this is probably the easiest. A straight forward 
 
 An other solution is to sum all the multiples of 3 and the multiples of 5, but then you will need to remove the multiples of 15 since those would be counted twice.
 
-In a language such as Python you can solve this problem on one line with the built in function `sum` and the use of list comprehension:
+In a language such as Python you can solve this problem on one line with the built in function `sum` and the use of comprehension expression:
 
 ```python
 sum((i for i in range(1000) if i % 3 == 0 or i % 5 == 0))
