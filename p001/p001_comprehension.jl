@@ -16,4 +16,4 @@ function sum_multiples(upper, mult1, mult2)
 end
 
 
-println(sum_multiples(10000, 3, 5))
+println(sum_multiples(1000, 3, 5))
