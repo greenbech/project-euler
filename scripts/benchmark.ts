@@ -28,7 +28,7 @@ let resultArray = execution_datas.map((item) => {
   const extension: string = path.extname(item["file_name"]);
   return [
     extensionsToLanguage[extension],
-    item["file_name"],
+    `[${item["file_name"]}](./${item["file_name"]})`,
     item["execution_time"],
   ];
 });
