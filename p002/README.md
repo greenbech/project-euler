@@ -42,9 +42,8 @@ The solution mentioned above is however not very efficient. For each call to the
 
 | Programming language | File                                                         | Duration (ms) |
 | :------------------- | :----------------------------------------------------------- | ------------: |
-| Python               | [p002_dynamic_programming.py](./p002_dynamic_programming.py) |            35 |
-| Python               | [p002_iterative.py](./p002_iterative.py)                     |            37 |
-| Julia                | [p002_iterative.jl](./p002_iterative.jl)                     |           274 |
-| Julia                | [p002_dynamic_programming.jl](./p002_dynamic_programming.jl) |           360 |
-
-
+| Python               | [p002_iterative.py](./p002_iterative.py)                     |            52 |
+| Python               | [p002_dynamic_programming.py](./p002_dynamic_programming.py) |            67 |
+| Julia                | [p002_dynamic_programming.jl](./p002_dynamic_programming.jl) |           386 |
+| MATLAB/GNU Octave    | [p002_iterative.m](./p002_iterative.m)                       |           455 |
+| Julia                | [p002_iterative.jl](./p002_iterative.jl)                     |           486 |
