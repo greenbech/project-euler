@@ -1,4 +1,4 @@
-import { runFile, extensionsToLanguage } from "./utils.ts";
+import { runFile, extensionsToLanguage, checkFormatSourceFile } from "./utils.ts";
 
 import * as path from "https://deno.land/std/path/mod.ts";
 import { walkSync } from "https://deno.land/std/fs/mod.ts";
@@ -6,7 +6,8 @@ import { walkSync } from "https://deno.land/std/fs/mod.ts";
 import { Markdown } from "https://deno.land/x/deno_markdown/mod.ts";
 
 // Load directory from first command line argument
-const directory: string = Deno.args[0];
+const directory: string = Deno.args[0] === "." ?  Deno.cwd() : Deno.args[0];
+const problem_number = parseInt(path.basename(directory).slice(1))
 
 // Load answer from `answer.txt` file
 let answer: number = parseInt(
@@ -17,6 +18,7 @@ let execution_datas = [];
 // Run files and check for correctness
 for (const entry of walkSync(directory)) {
   if (entry.isFile && path.extname(entry.name) in extensionsToLanguage) {
+    checkFormatSourceFile(entry.path, problem_number);
     let execution_data = await runFile(entry.name, directory, answer);
     execution_datas.push(execution_data);
   }
@@ -46,6 +48,5 @@ markdown
 
 
 // Display markdown to stdout
-console.log(`## Benchmark`)
-console.log()
-console.log(markdown.content);
+const md_benchmark = `## Benchmark\n\n${markdown.content}`;
+console.log(md_benchmark);
