@@ -1,8 +1,8 @@
-#  Scripts for checking corretness and running benchmarks
+#  Scripts for checking correctness and running benchmarks
 
 Here I provide some scripts for making the development process easier. The scripts are written with the (relatively new) runtime for Javascript/Typescript *Deno*. 
 
-Deno makes writing scripts with dependencies fun and easy because you just need to specify the URL when importing—there is no need to set up a project! It also include the `deno install` command which is handy 🤘
+Deno makes writing scripts with dependencies fun and easy because you just need to specify the URL when importing—there is no need to set up a project! It also includes the `deno install` command which is handy 🤘
 
 ## `pecheck.ts`
 
@@ -18,7 +18,7 @@ deno install -f -A --unstable pecheck.ts
 
 ## `pebenchmark.ts`
 
-`pebenchmark.ts` (read: Project Euler benchmark) calculates the executions time for each problem and prints a markdown table to stdout. Currently you have to the copy-paste to the README.md manually (the first time you can run `pebenchmark p001 >> p001/README.md`), but you have to do some cleaning in the README if you have done this before 😩
+`pebenchmark.ts` (read: Project Euler benchmark) calculates the executions time for each problem and prints a markdown table to stdout. Currently, you have do to the copy-paste to the README.md manually (the first time you can run `pebenchmark p001 >> p001/README.md`), but you have to do some cleaning in the README if you have done this before 😩
 
 
 Again, I recommend you to install it with
