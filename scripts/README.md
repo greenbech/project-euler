@@ -18,7 +18,7 @@ deno install -f -A --unstable pecheck.ts
 
 ## `pebenchmark.ts`
 
-`pebenchmark.ts` (read: Project Euler benchmark) calculates the executions time for each problem and prints a markdown table to stdout. Currently, you have do to the copy-paste to the README.md manually (the first time you can run `pebenchmark p001 >> p001/README.md`), but you have to do some cleaning in the README if you have done this before 😩
+`pebenchmark.ts` (read: Project Euler benchmark) calculates the executions time for each problem and prints a markdown table to stdout. Currently, you have do to the copy-paste to the README.md manually (the first time you can run `pebenchmark p001 >> p001/README.md`), but you have to do some cleaning in the README if you have done this before 🧹😕
 
 
 Again, I recommend you to install it with
