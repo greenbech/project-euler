@@ -19,5 +19,5 @@ The more clever approach is to first find the smallest prime factor of `n` and t
 | Programming language | File                 | Duration (ms) |
 | :------------------- | :------------------- | ------------: |
 | Python               | [p003.py](./p003.py) |            47 |
-| MATLAB/GNU Octave    | [p003.m](./p003.m)   |           390 |
-| Julia                | [p003.jl](./p003.jl) |           603 |
+| Julia                | [p003.jl](./p003.jl) |           286 |
+| MATLAB/GNU Octave    | [p003.m](./p003.m)   |           352 |
