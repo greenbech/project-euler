@@ -7,7 +7,7 @@ function main()
     while n > 1
         for i = biggest_factor:(mod(biggest_factor, 2)+1):n
             if mod(n, i) == 0
-                n = n / i;
+                n = n ÷ i;
                 biggest_factor = i;
                 break
             end
